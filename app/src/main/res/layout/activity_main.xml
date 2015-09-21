@@ -1,0 +1,54 @@
+<!--手机里劳力士-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+          >
+<!--定义模拟时钟-->
+<AnalogClock
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"/>
+<!--定义数字时钟-->
+<DigitalClock
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="#f0f"
+    android:drawableRight="@drawable/ic_launcher"
+    />
+    <!--定义模拟时钟，并使用自定义表盘、时针图片-->
+    <AnalogClock
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:dial="@drawable/ic_launcher"
+        android:hand_minute="@drawable/ic_launcher"
+        />
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <Chronometer
+        android:textSize="22sp"
+        android:id="@+id/ch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="—20秒后停止点击停止按钮"
+        android:textSize="20sp"
+        />
+</LinearLayout>
+    <Button
+        android:id="@+id/start"
+        android:text="开始"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="停止"
+        android:id="@+id/stop"
+        />
+
+</LinearLayout>
